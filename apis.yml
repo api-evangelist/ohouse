@@ -1,4 +1,16 @@
 aid: ohouse
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ohouse.png
 name: OHouse
 description: 'OHouse is a company surfaced as a portfolio company of bond-capital and added to the API
   Evangelist network as a stub for enrichment. Sector: ecommerce. This profile is a lead awaiting the
@@ -12,7 +24,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Ecommerce
@@ -23,5 +35,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ohouse-domain-security.yml
 - type: Website
   url: https://ohou.se
+- type: LLMsTxt
+  url: llms/ohouse-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

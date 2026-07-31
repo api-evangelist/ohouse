@@ -1,0 +1,21 @@
+# OHouse
+
+> OHouse (ohou.se) is an e-commerce company tracked in the API Evangelist
+> network. It was surfaced as a portfolio company of Bond Capital and added as
+> a stub for enrichment. No public developer, API, or documentation surface has
+> been located: the site edge returns HTTP 403 to all automated access, so its
+> well-known discovery endpoints could not be probed.
+
+## Company
+
+- [Website](https://ohou.se): OHouse home site (blocks automated crawlers; browser access only).
+
+## Network artifacts
+
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/ohouse/refs/heads/main/security/ohouse-domain-security.yml): Live TLS/DNS posture (TLS 1.3, no HSTS/DNSSEC/CAA/SPF/DMARC).
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/ohouse/refs/heads/main/apis.yml): Machine-readable profile for this company.
+
+## Notes
+
+- No OpenAPI, AsyncAPI, SDK, MCP, or developer-portal surface has been discovered for this provider.
+- This profile is a lead awaiting a public developer surface; re-run enrichment when one is published.

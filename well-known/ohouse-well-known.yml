@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: probed
+source: live probe of /.well-known/* on apis.yml hosts
+host: https://ohou.se
+note: >-
+  Every request to ohou.se (root and all /.well-known/ paths) returned HTTP 403
+  from the site's edge/WAF, which blocks automated (non-browser) access entirely.
+  No discovery document could be retrieved. Absence here reflects a blocked probe,
+  not a confirmed 404, so no WellKnown/SecurityTxt pointer is emitted.
+documents:
+- path: /.well-known/security.txt
+  status: 403
+- path: /.well-known/openid-configuration
+  status: 403
+- path: /.well-known/oauth-authorization-server
+  status: 403
+- path: /.well-known/api-catalog
+  status: 403
+- path: /.well-known/ai-plugin.json
+  status: 403
